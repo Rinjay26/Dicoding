@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #121212, #74808d);
+  color: #333;
+}
+
+h2,
+h3 {
+  color: #121212;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: linear-gradient(to right, #121212, #74808d);
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: font-weight 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #a9a7ab;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.profile img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background: linear-gradient(to right, #121212, #74808d);
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background: linear-gradient(to right, #121212, #74808d);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek hover pada gambar */
+img:hover {
+  transform: scale(1.1); /* Memperbesar gambar */
+  transition: transform 0.3s ease-in-out; /* Animasi halus */
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+th {
+  text-align: left;
+  width: 100px;
+}
